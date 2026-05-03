@@ -12,17 +12,12 @@
             <li><%= user %></li>
         <% }) %>
     </ul> -->
-<ul>
-    <% for(let i=0; i<users.length; i++) { %>
-        <li><%= users[i] %></li>
-    <% } %>
+    
+    <ul>
+        <% for(let i=0; i<users.length; i++) { %>
+            <li><%= users[i] %></li>
+            <% } %>
 </ul>
 
-
-<% if(isLoggedIn){  %>
-    <h3>Welcome, You are logged in!</h3>
-    <% }else{ %>
-    <h3>Please log in to see the user list.</h3>
-    <% } %>
 </body>
 </html>
